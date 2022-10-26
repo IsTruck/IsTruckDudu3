@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#040450"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/img_teste"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_desc_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Peso: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_teste">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/text_Peso"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/text_desc_peso">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_material"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_Peso">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_endOrigem"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_material">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_endDestinatario"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_endOrigem">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_preco"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/img_teste"
+        app:layout_constraintTop_toBottomOf="@id/text_endDestinatario">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
